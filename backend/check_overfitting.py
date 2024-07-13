@@ -10,6 +10,3 @@ def check_overfitting(model, X_train, y_train, X_test, y_test, metric_fun):
     print(f'{metric_fun.__name__} train: %.3f' % value_train)
     print(f'{metric_fun.__name__} test: %.3f' % value_test)
     print(f'delta = {(abs(value_train - value_test)/value_test*100):.1f} %')
-
-# Проверка на переобучение модели BaggingClassifier
-# check_overfitting(bc, X_train, y_train, X_test, y_test, roc_auc_score)
