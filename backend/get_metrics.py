@@ -76,9 +76,9 @@ def get_metrics_regression(y_test: np.ndarray,
     df_metrics['R2 adjusted'] = r2_adjusted(y_test, y_pred, X_test)
     # df_metrics['Huber_loss'] = huber_loss(y_test, y_pred, delta)
     # df_metrics['Logcosh'] = logcosh(y_test, y_pred)
-    df_metrics['MPE_%'] = mpe(y_test, y_pred)
-    df_metrics['MAPE_%'] = mape(y_test, y_pred)
-    df_metrics['WAPE_%'] = wape(y_test, y_pred)
+    # df_metrics['MPE_%'] = mpe(y_test, y_pred)
+    # df_metrics['MAPE_%'] = mape(y_test, y_pred)
+    # df_metrics['WAPE_%'] = wape(y_test, y_pred)
 
     return df_metrics
 
