@@ -72,7 +72,7 @@ def get_metrics_regression(y_test: np.ndarray,
     df_metrics['MAE'] = mean_absolute_error(y_test, y_pred)
     df_metrics['MSE'] = mean_squared_error(y_test, y_pred)
     df_metrics['RMSE'] = np.sqrt(mean_squared_error(y_test, y_pred))
-    df_metrics['RMSLE'] = rmsle(y_test, y_pred)
+    # df_metrics['RMSLE'] = rmsle(y_test, y_pred)
     df_metrics['R2 adjusted'] = r2_adjusted(y_test, y_pred, X_test)
     # df_metrics['Huber_loss'] = huber_loss(y_test, y_pred, delta)
     # df_metrics['Logcosh'] = logcosh(y_test, y_pred)
